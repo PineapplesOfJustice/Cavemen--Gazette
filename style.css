@@ -1,0 +1,199 @@
+/* Font */
+
+@font-face {
+    font-family: "Fell English";
+    src: url("Assets/Fonts/Fell English.ttf");
+}
+
+@font-face {
+    font-family: "Rye";
+    src: url("Assets/Fonts/Rye.ttf");
+}
+
+@font-face {
+    font-family: "Special Elite";
+    src: url("Assets/Fonts/Special Elite.ttf");
+}
+
+
+/* Basic */
+
+body {
+    background-color: black;
+}
+
+h1{
+    font-family: Rye;
+    font-size: 90px;
+    text-shadow: 2px 2px 2px white;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2{
+    font-family: Special Elite;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+h3{
+    font-family: Special Elite;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-family: Special Elite;
+    text-indent: 30px;
+    padding: 0px;
+    text-align: left;
+    /*text-overflow: ellipsis;*/
+    word-wrap: break-word;
+}
+
+a{
+    color: mediumblue;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input[type=text]{
+    width: 150px;
+    height: 25px;
+    -webkit-transition: .5s; 
+    transition: width .5s;
+    border: solid 1px black;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 17px;
+    font-family: Special Elite;
+}
+
+input[type=text]:focus{
+    width: 320px;
+    border: solid 2px black;
+}
+
+button{
+    width: 100px;
+    height: 29px;
+    border: solid 1px black;
+    font-size: 17px;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: Special Elite;
+}
+
+button:hover{
+    background-color: olivedrab;
+}
+
+
+/* Chain */
+
+div > div{
+    padding: 20px;
+    padding-top: 0px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* Class */
+
+.container{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+.flex1{
+    flex: 1;
+    text-align: center;
+    min-width: 0px; /* Actually important to prevent text-overflow. */
+}
+
+.thumbnailContainer{
+    width: 100%;
+}
+
+.thumbnailContent{
+    height: auto;
+    width: 100%;   
+    /*object-fit: cover;*/
+}
+
+.lineCutter{
+    padding: 10px;
+}
+
+
+/* Newspaper */
+
+#newspaperContainer{
+    background-color: #CDC4B3;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 3vh;
+}
+
+#newspaperContent{
+    display: none;
+}
+
+#dateHeader{
+    font-size: 30px;
+    color: black;
+    font-family: Rye;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+/* Scroll Button */
+
+#scrollButton{
+    background-color: black;
+    border-radius: 50px;
+    border: solid 1px white;
+    position: fixed;
+    bottom: 6vh;
+    right: 2vw; 
+    width: 5vw;
+    height: 5vw;
+    padding: 6px;
+    cursor: pointer;
+    display: none;  
+    align-items: center;
+    -webkit-transition: .7s; 
+    transition: border-radius .7s;
+}
+
+#scrollButton > p{
+    color: white;
+    text-indent: 0px;
+    padding: 0px;
+    text-align: center;
+    flex: 1;
+}
+
+#scrollButton:hover{ 
+    border-radius: 5px;
+}

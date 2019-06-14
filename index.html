@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cavemen' Gazette</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type='text/css' href="style.css" />
+    </head>
+    <body>
+        <div id="newspaperContainer">
+            <h1>Cavemen' Gazette</h1>
+            <h3 id="dateHeader"></h3>
+            <h2 class="lineCutter"></h2>
+            <div id="newspaperInput">
+                <input type="text" placeholder="Subject" id="subjectInput" onfocus="eraseInput('subjectInput')" maxlength = "30" >
+                <button id="subjectButton" onclick="updateSubject()">Search</button>
+            </div>
+            <div id="newspaperContent">
+                <div class="flex1">
+                    <h2 id="contentHeader0"></h2>
+                    <h3 id="contentAuthor0"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail0" onerror="reportImage('contentThumbnail0')"/>  
+                    </div>
+                    <p id="contentContent0"></p>
+                    
+                    <h2 id="contentHeader1"></h2>
+                    <h3 id="contentAuthor1"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail1" onerror="reportImage('contentThumbnail1')"/>  
+                    </div>
+                    <p id="contentContent1"></p> 
+                    
+                    <h2 id="contentHeader2"></h2>
+                    <h3 id="contentAuthor2"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail2" onerror="reportImage('contentThumbnail2')"/>  
+                    </div>
+                    <p id="contentContent2"></p>
+                </div>     
+                <div class="flex1"> 
+                    <h2 id="contentHeader3"></h2>
+                    <h3 id="contentAuthor3"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail3" onerror="reportImage('contentThumbnail3')"/>  
+                    </div>
+                    <p id="contentContent3"></p>
+                    
+                    <h2 id="contentHeader4"></h2>
+                    <h3 id="contentAuthor4"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail4" onerror="reportImage('contentThumbnail4')"/>  
+                    </div>
+                    <p id="contentContent4"></p>
+                    
+                    <h2 id="contentHeader5"></h2>
+                    <h3 id="contentAuthor5"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail5" onerror="reportImage('contentThumbnail5')"/>  
+                    </div>
+                    <p id="contentContent5"></p>
+                </div>     
+                <div class="flex1"> 
+                    <h2 id="contentHeader6"></h2>
+                    <h3 id="contentAuthor6"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="contentThumbnail6" onerror="reportImage('contentThumbnail6')"/>  
+                    </div>
+                    <p id="contentContent6"></p>
+                    
+                    <h2 id="editorHeader"></h2>
+                    <h3 id="editorName"></h3>
+                    <div class="thumbnailContainer">
+                        <img class="thumbnailContent" id="editorPortrait" onerror="reportImage('editorPortrait')"/>  
+                    </div>
+                    <p id="editorContent"></p>
+                </div>     
+            </div>    
+            <p>Powered by <a target="_blank" href="https://newsapi.org/">News API</a> and <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</p>
+        </div>
+        <div id="scrollButton" onclick="scrollSmoothToTop()">
+            <p>↑<br>Scroll</p>
+        </div>
+        <script src="jquery-v3.4.1.js"></script>
+        <script src="p5.min.js"></script>
+        <script src="p5.dom.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
