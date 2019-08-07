@@ -121,6 +121,7 @@ div > div{
     display: flex;
     padding: 30px;
     justify-content: center;
+	flex-wrap: wrap;
 }
 
 .flex1{
